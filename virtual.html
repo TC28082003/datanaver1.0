@@ -725,7 +725,7 @@ console.log(virtualProfilesData);
 
         // Valeur original dans ce fichier
         const fullRows = data_transform.slice(1).map(row => {
-            return selectedCols.map(colIndex => parseFloat(row[colIndex]) || 0);
+            return selectedCols.map(colIndex => row[colIndex]);
         });
         console.log("Full:",fullRows);
         console.log("Fil: ",filteredRows);
